@@ -1,0 +1,59 @@
+<!-- 
+    Instructions:
+DONE    1. Set the title of the page as "Styling Assignment | AI Myth Corp"
+DONE    2.Create a image with src equal to "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/220px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg"
+DONE    3.Include this font in the head element = <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+DONE    4. In the anchor element set href equal to "https://en.wikipedia.org/wiki/Albert_Einstein"
+DONE    5. Set padding equal to 30px and margin equal to 20px to class "card" using css
+DONE    6. Set name="Albert Einstein" 
+ -->
+
+ <!DOCTYPE html>
+ <html>
+     <head>
+             <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+             <title>Styling Assignment | AI Myth Corp</title>
+         <!-- Set the title here -->
+     </head>
+     <body>
+         <center>
+             <h1> Welcome to Einstein's Introduction </h1>
+             <div class="card">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/220px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" />
+                 <p><strong>Name : </strong> Albert Einstein </p>
+                 <p><b> Nationality : </b> German </p>
+                 <p><b>Achievements : </b> Nobel Prize in Physics, Fraklin Medal, Copley Madal, etc.</p>
+                 <!-- Remove the commented Paragraph -->
+                 <p><b>Popular For : </b> <mark>General Theory of Realativity</mark> </p>
+                 <p><a href="?" target="_blank">Visit wikipedia Page</a></p>
+             </div>
+         </center>
+     </body>
+ </html>
+ <style type="text/css">
+     body, html {
+         font-family: 'Raleway', sans-serif;
+         background-color: #636363;
+         text-align: center;
+     }
+     h1 {
+         color: white;
+         text-decoration: underline;
+     }
+     .card {
+         border-radius: 3px;
+        /* set padding here */
+        padding: 30px;
+        /* set margin here */
+        margin: 20px;
+         background: white;
+         box-shadow: 2px 2px 3px 1px rgba(43, 43, 43, 0.6);
+         height: 100%;
+         width: 250px;
+     }
+     .card img {
+         height: 250px;
+         width: 200px;
+         border-radius: 50%;
+     }
+ </style>

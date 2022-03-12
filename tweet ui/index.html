@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tweet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
+    rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="feed" id="feed">
+        <div class="feed_header">
+            <h2>Home</h2>
+        </div>
+        <div class="tweetbox">
+            <form action="javascript:void(0);" method="POST" onsubmit="app.Tweet()">
+                <div class="tweetbox_input">
+                    <span class="material-icons">person</span>
+                    <input type="text" placeholder="What's happening?" id="tweetContent">
+                </div>
+                <input type="submit" value="Tweet" class="tweetbox_tweetbutton" onclick="Tweet()">
+
+                <!-- <button class="tweetbox_tweetbutton">Tweet</button> -->
+            </form>
+        </div>
+
+
+        <!-- first post -->
+        <div class="post">
+            <div class="post_avatar">
+                <img src="images/dp1.jpg">
+            </div>
+            <div class="post_body">
+                <div class="post_header">
+                    <div class="post_header_text">
+                        <h3>Mark Dalgleish
+                            <span class="post_header_special">@markdalgleish . 1m</span>
+                        </h3>
+                    </div>
+                    <div class="post_header_description">
+                        <p>Working at <span style="color: #50b7f5;">@rainbowdotme</span> is absolutely TERRIBLE for my imposter syndrome</p>
+                    </div>
+                </div>
+
+                <p></p>
+                
+                <div class="post_footer">
+                    <!-- <button -->
+                    <span class="material-icons-outlined">edit</span>
+                    <span class="material-icons-outlined">delete</span>
+                    <span class="material-icons-outlined">favorite_border</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- second post -->
+        <div class="post">
+            <div class="post_avatar">
+                <img src="images/dp1.jpg">
+            </div>
+            <div class="post_body">
+                <div class="post_header">
+                    <div class="post_header_text">
+                        <h3>ANTIREZ
+                            <span class="post_header_special">@antirez . 4hr</span>
+                        </h3>
+                    </div>
+                    <div class="post_header_description">
+                        <p>Abstractions are a mean do dominate complexity, not a way to write code 
+                            that is different and more convoluted to show you are smart. Every 
+                            abstractions that does not pay itself the same weight in gold, is bad.
+                            This is a crucial concept that who came before left us.
+                        </p>
+                    </div>
+                </div>
+
+                <p></p>
+                
+                <div class="post_footer">
+                    <span class="material-icons-outlined">edit</span>
+                    <span class="material-icons-outlined">delete</span>
+                    <span class="material-icons-outlined">favorite_border</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+js array of objects 
