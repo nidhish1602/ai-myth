@@ -30,32 +30,13 @@ body {
     padding: 15px 20px;
 }
 
-.feed_header h2{
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.feed::-webkit-scrollbar{
-    display: none;
-}
-
-.feed {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.tweetbox_input span {
-    border-radius: 50%;
-    height: 40px;
-}
-
-.tweetbox {
+.form {
     padding-bottom: 10px;
     border-bottom: 8px solid var(--twitter-background);
     padding-right: 10px;
 }
 
-.tweetbox form{
+.form form{
     display: flex;
     flex-direction: column;
 }
@@ -85,50 +66,26 @@ body {
     margin-left: auto;
 }
 
-/* post */
-.post_avatar {
-    border-radius: 50%;
-    height: 40px;
-    padding: 20px;
+/* edit box  */
+#edit-box{
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
 }
 
+/* post picture */
+.post_avatar {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+  
 img {
     max-width: 100%;
     max-height: 100%;
-}
-
-.post {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid var(--twitter-background);
-    padding-bottom: 10px;
-}
-
-.post_footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    /* padding-top: 10px; */
-}
-
-.post_header_special {
-    font-weight: 500;
-    font-size: 13px;
-    color: grey;
-}
-
-.post_header_text h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.post_header_description {
-    margin-bottom: 10px;
-    font-size: 15px;
-    /* padding: 0% 1% 0% 1%; */
-}
-
-.post_body {
-    flex: 1;
-    padding: 10px;
 }
