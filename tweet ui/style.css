@@ -84,7 +84,61 @@ body {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
 }
-  
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+}
+
+.post_footer {
+}
+
+.button {
+    /* font-size: 13px; */
+    padding: 5px;
+    margin-left: 80px;
+    /* flex: ; */
+}
+
+.edit {
+    border: transparent;
+    background-color: transparent;
+}
+
+.delete {
+    border: transparent;
+    background-color: transparent;
+}
+
+.like {
+    border: transparent;
+    background-color: transparent;
+}
+
+.post_header_special {
+    font-weight: 500;
+    font-size: 13px;
+    color: grey;
+}
+
+.post_header_text h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.post_header_description {
+    margin-bottom: 10px;
+    font-size: 15px;
+    /* padding: 0% 1% 0% 1%; */
+}
+
+.post_body {
+    flex: 1;
+    padding: 10px;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;

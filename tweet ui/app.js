@@ -14,12 +14,12 @@ var app = new function(){
                 data += '<td><div class="post_header_text"><h3>ANTIREZ<span class="post_header_special">@antirez • now</span></h3></div></td>'
                 data += '</tr>';
                 data += '<tr>';
-                data += '<td>' + this.tweets[i] + '</td>';
+                data += '<td><div class="post_header_description"><p>' + this.tweets[i] + '</p></div></td>';
                 data += '</tr>';
-                data += '<tr>'
-                data += '<td><button onclick="app.Edit(' + i + ')"  class="btn btn-warning">Edit</button></td>';
-                data += '<td><button onclick="app.Delete(' + i + ')"  class="btn btn-danger">Delete</button></td>';        
-                data += '<td><button onclick="app.Delete(' + i + ')"  class="bi bi-heart">Like</button></td>';   
+                data += '<tr class="post_footer">'
+                data += '<td><button onclick="app.edit(' + i + ')" class="edit"><img src="https://img.icons8.com/material-outlined/24/000000/pencil--v2.png"/></button></td>';
+                data += '<td><button onclick="app.delete(' + i + ')" class="delete"><img src="https://img.icons8.com/material-outlined/24/000000/trash--v1.png"/></button></td>';        
+                data += '<td><button id="click" onclick="app.like(' + i + ')"  class="like"><img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/></button></td>';   
                 data += '</tr>';
             }
         }
@@ -69,6 +69,14 @@ var app = new function(){
             el.innerHTML = "No "+name;
         }
     }
+
+    this.like = function() {
+        var el = document.getElementById('count');
+        count = 0;
+        button.onclick = function() {
+            count += 1;
+            button.innerHTML = count;
+    }}
 }
 
 app.fetchAll();
