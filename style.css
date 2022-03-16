@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+
+    /* #e6ecf0 */
+} 
+
+.feed {
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+    font-family: Helvetica;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.feed_header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+.form {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-right: 10px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox_input {
+    display: flex;
+    padding: 20px;
+}
+
+.tweetbox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.tweetbox_tweetbutton {
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+/* edit box  */
+#edit-box{
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* post picture */
+.post_avatar {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+}
+
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    /* padding-top: 10px; */
+}
+
+.button {
+    /* font-size: 13px; */
+    padding: 5px;
+    margin-left: 80px;
+    /* flex: ; */
+}
+
+.edit {
+    border: transparent;
+    background-color: transparent;
+}
+
+.delete {
+    border: transparent;
+    background-color: transparent;
+    /* margin-left: 30%; */
+}
+
+.like {
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    font-size: 1.3em;
+    gap: 7px;
+}
+
+.post_header_special {
+    font-weight: 500;
+    font-size: 13px;
+    color: grey;
+}
+
+.post_header_text h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.post_header_description {
+    margin-bottom: 10px;
+    font-size: 15px;
+    /* padding: 0% 1% 0% 1%; */
+}
+
+.post_body {
+    flex: 1;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}

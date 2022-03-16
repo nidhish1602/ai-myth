@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="feed">
+        <h2 class="feed_header">Home</h2>
+        <div class="form">
+            <form action="javascript:void(0);" method="POST" onsubmit="app.add()">
+                <div class="tweetbox_input">
+                    <span class="material-icons">person</span>
+                    <input type="text" placeholder="What's happening?" id="tweetContent">
+                </div>
+                <input type="submit" value="Tweet" class="tweetbox_tweetbutton">
+            </form>
+        </div> 
+        
+        <!-- <p>You Have: </p> -->
+        <p id="counter" style="color: white; font-size: 0px;"></p>  <!-- to check if the tweet button works   -->
+
+        <div class="post">
+            <table>
+                <tbody id="tweets"></tbody>     <!-- all tweeets reside here  -->   
+            </table>
+        </div>
+
+        <div id="edit-box" role="aria-hidden">
+            <form action="javascript:void(0);" method="POST" id="save-edit">
+              <input type="text" id="edit_tweet">
+              <input type="submit" value="Save" class="tweetbox_tweetbutton"/> 
+              <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
