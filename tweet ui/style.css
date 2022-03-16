@@ -32,7 +32,7 @@ body {
 
 .form {
     padding-bottom: 10px;
-    border-bottom: 8px solid var(--twitter-background);
+    border-bottom: 1px solid var(--twitter-background);
     padding-right: 10px;
 }
 
@@ -93,6 +93,10 @@ body {
 }
 
 .post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    /* padding-top: 10px; */
 }
 
 .button {
@@ -110,11 +114,15 @@ body {
 .delete {
     border: transparent;
     background-color: transparent;
+    /* margin-left: 30%; */
 }
 
 .like {
     border: transparent;
     background-color: transparent;
+    display: flex;
+    font-size: 1.3em;
+    gap: 7px;
 }
 
 .post_header_special {
