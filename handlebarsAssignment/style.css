@@ -1,0 +1,22 @@
+body {
+    padding: 2px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.eachUser {
+    text-align: center;
+    margin: 25px;
+}
+
+p {
+    font-weight: 500;
+}
